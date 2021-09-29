@@ -5,14 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Praktikum_4"
         mc:Ignorable="d"
-       Title="Сохранение позиции окна"
-        Height="340"
-        Width="320">
-    <Border BorderBrush="White"
-            BorderThickness="1"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Center">
-        <Image Source="Image.png" Stretch="UniformToFill" />
-    </Border>
+       Title="Главное окно" Height="175" Width="461">
+    <Grid>
+        <Button Content="Показать второе окно" 
+                Height="23" 
+                HorizontalAlignment="Left" 
+                Margin="112,33,0,0" 
+                Name="buttonShow" 
+                VerticalAlignment="Top" 
+                Width="227" 
+                Click="button1_Click" />
+        <Button Content="Обновить второе окно" 
+                Height="23" 
+                HorizontalAlignment="Left" 
+                Margin="112,0,0,37" 
+                Name="buttonUpdate" 
+                VerticalAlignment="Bottom" 
+                Width="227" 
+                IsEnabled="False" 
+                Click="buttonUpdate_Click" />
+    </Grid>
 
 </Window>

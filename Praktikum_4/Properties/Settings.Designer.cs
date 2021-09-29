@@ -22,29 +22,5 @@ namespace Praktikum_4.Properties {
                 return defaultInstance;
             }
         }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("100,0,0,0")]
-        public global::System.Windows.Rect WindowPosition {
-            get {
-                return ((global::System.Windows.Rect)(this["WindowPosition"]));
-            }
-            set {
-                this["WindowPosition"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Window.Position")]
-        public string Title {
-            get {
-                return ((string)(this["Title"]));
-            }
-            set {
-                this["Title"] = value;
-            }
-        }
     }
 }
