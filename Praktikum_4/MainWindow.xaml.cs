@@ -10,7 +10,6 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Praktikum_4
@@ -23,6 +22,8 @@ namespace Praktikum_4
         public MainWindow()
         {
             InitializeComponent();
+            Window1 w = new Window1();
+            w.ShowDialog();
         }
     }
 }
