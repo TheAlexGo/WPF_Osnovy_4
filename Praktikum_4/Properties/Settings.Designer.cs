@@ -35,12 +35,15 @@ namespace Praktikum_4.Properties {
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("Window.Position")]
         public string Title {
             get {
                 return ((string)(this["Title"]));
+            }
+            set {
+                this["Title"] = value;
             }
         }
     }

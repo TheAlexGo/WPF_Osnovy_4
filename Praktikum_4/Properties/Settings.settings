@@ -5,7 +5,7 @@
     <Setting Name="WindowPosition" Type="System.Windows.Rect" Scope="User">
       <Value Profile="(Default)">100,0,0,0</Value>
     </Setting>
-    <Setting Name="Title" Type="System.String" Scope="Application">
+    <Setting Name="Title" Type="System.String" Scope="User">
       <Value Profile="(Default)">Window.Position</Value>
     </Setting>
   </Settings>
