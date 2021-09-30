@@ -5,12 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Praktikum_4"
         mc:Ignorable="d"
-        Title="Расчет среднего арифметического" Height="255" Width="255">
+        Title="загруженные картинки" Height="450" Width="400">
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Введите числа через пробел:" VerticalAlignment="Top" Width="229"/>
-        <TextBox Name="TextBoxNumbers" Height="23" Margin="10,37,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" />
-        <TextBlock Name="TextBlockResult" Margin="10,98,10,0" TextWrapping="Wrap" Text="TextBlock" Height="25" VerticalAlignment="Top" Background="#FFFF9B9B" Foreground="White"
-                   TextAlignment="Center"/>
-        <Button Content="Рассчитать" Margin="10,188,10,10" Click="Button_Click"/>
+        <ListBox Name="ListBoxImages" Height="153" Margin="10,10,10,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" SelectionChanged="ListBoxImages_SelectionChanged" />
+
+        <Grid Margin="10,200,10,51">
+            <Image Name="ImagesContent" HorizontalAlignment="Left" Height="170" VerticalAlignment="Top" Width="374"/>
+        </Grid>
+        <Button Content="Сохранить" HorizontalAlignment="Left" Margin="10,375,0,0" VerticalAlignment="Top" Width="374" Height="36" Click="Button_Click"/>
+
     </Grid>
 </Window>

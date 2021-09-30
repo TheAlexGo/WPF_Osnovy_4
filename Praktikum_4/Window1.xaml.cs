@@ -1,5 +1,8 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,26 +22,33 @@ namespace Praktikum_4
     /// </summary>
     public partial class Window1 : Window
     {
+        SaveFileDialog _saveDialog = new SaveFileDialog();
         public Window1()
         {
             InitializeComponent();
-            TextBlockResult.Visibility = Visibility.Hidden;
+        }
+
+        public void UpdateWindow(string[] imagesArray)
+        {
+            foreach (string image in imagesArray)
+            {
+                ListBoxImages.Items.Add(image);
+            }
+        }
+
+        private void ListBoxImages_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ImagesContent.Source = new BitmapImage(new Uri(ListBoxImages.SelectedItem.ToString()));
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            string numbers = TextBoxNumbers.Text;
-            string[] numbersArr = numbers.Split(' ');
-            int sum = 0;
-            float result = 0;
-            foreach(string num in numbersArr)
+            _saveDialog.Filter = "Text files (*.PNG)|*.png|All Files (*.*)|*.*";
+            if (_saveDialog.ShowDialog() == true)
             {
-                sum += int.Parse(num);
+                Bitmap myBitmap = new Bitmap(ListBoxImages.SelectedItem.ToString());
+                myBitmap.Save(_saveDialog.FileName);
             }
-            result = sum / numbersArr.Length;
-
-            TextBlockResult.Text = $"Результат: {result}";
-            TextBlockResult.Visibility = Visibility.Visible;
         }
     }
 }
