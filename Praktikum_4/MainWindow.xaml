@@ -5,8 +5,49 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Praktikum_4"
         mc:Ignorable="d"
-         Title="Main Window" Height="300" Width="500">
+         Title="Main Window" Height="255" Width="255">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Button
+            VerticalAlignment="Center"
+            Margin="10"
+            Grid.Column="0"
+            Grid.Row="0" Click="Button_Click"
+        >
+            <TextBlock TextWrapping="Wrap" Text="Среднее арифметическое" TextAlignment="Center" />
+        </Button>
+        <Button
+            VerticalAlignment="Center"
+            Margin="10"
+            Grid.Column="0"
+            Grid.Row="1" Click="Button_Click_2"
+        >
+
+            <TextBlock TextWrapping="Wrap" Text="Работа со списками" TextAlignment="Center" />
+        </Button>
+        <Button
+            VerticalAlignment="Center"
+            Margin="10"
+            Grid.Column="1"
+            Grid.Row="0" Click="Button_Click_1"
+        >
+
+            <TextBlock TextWrapping="Wrap" Text="Решение квадратного уравнения" TextAlignment="Center" />
+        </Button>
+        <Button
+            VerticalAlignment="Center"
+            Margin="10"
+            Grid.Column="1"
+            Grid.Row="1"
+        >
+            <TextBlock TextWrapping="Wrap" Text="Работа с файлами" TextAlignment="Center" />
+        </Button>
     </Grid>
 </Window>

@@ -1,0 +1,16 @@
+﻿<Window x:Class="Praktikum_4.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Praktikum_4"
+        mc:Ignorable="d"
+        Title="Расчет среднего арифметического" Height="255" Width="255">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Введите числа через пробел:" VerticalAlignment="Top" Width="229"/>
+        <TextBox Name="TextBoxNumbers" Height="23" Margin="10,37,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" />
+        <TextBlock Name="TextBlockResult" Margin="10,98,10,0" TextWrapping="Wrap" Text="TextBlock" Height="25" VerticalAlignment="Top" Background="#FFFF9B9B" Foreground="White"
+                   TextAlignment="Center"/>
+        <Button Content="Рассчитать" Margin="10,188,10,10" Click="Button_Click"/>
+    </Grid>
+</Window>

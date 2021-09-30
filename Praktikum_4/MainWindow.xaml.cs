@@ -22,9 +22,27 @@ namespace Praktikum_4
     /// </summary>
     public partial class MainWindow : Window
     {
+        Window1 w1 = new Window1();
+        Window2 w2 = new Window2();
+        Window3 w3 = new Window3();
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            w1.Show();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            w2.Show();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            w3.Show();
         }
     }
 }
