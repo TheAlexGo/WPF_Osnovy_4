@@ -7,7 +7,7 @@
         mc:Ignorable="d"
        Title="Главное окно" Height="175" Width="461">
     <Grid>
-        <Button Content="Показать второе окно" 
+        <Button Content="Update" 
                 Height="23" 
                 HorizontalAlignment="Left" 
                 Margin="112,33,0,0" 
@@ -15,15 +15,6 @@
                 VerticalAlignment="Top" 
                 Width="227" 
                 Click="button1_Click" />
-        <Button Content="Обновить второе окно" 
-                Height="23" 
-                HorizontalAlignment="Left" 
-                Margin="112,0,0,37" 
-                Name="buttonUpdate" 
-                VerticalAlignment="Bottom" 
-                Width="227" 
-                IsEnabled="False" 
-                Click="buttonUpdate_Click" />
     </Grid>
 
 </Window>
