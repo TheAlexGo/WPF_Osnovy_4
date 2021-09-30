@@ -10,7 +10,7 @@
         WindowStyle="None"
         MouseLeftButtonDown="Window_MouseLeftButtonDown">
     <Window.Background>
-        <ImageBrush ImageSource="image.jpg"></ImageBrush>
+        <ImageBrush ImageSource="bg.png"></ImageBrush>
     </Window.Background>
     <Grid>
         <Button Content="Close" 
