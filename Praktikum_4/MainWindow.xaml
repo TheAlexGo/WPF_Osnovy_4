@@ -45,7 +45,7 @@
             VerticalAlignment="Center"
             Margin="10"
             Grid.Column="1"
-            Grid.Row="1"
+            Grid.Row="1" Click="Button_Click_3"
         >
             <TextBlock TextWrapping="Wrap" Text="Работа с файлами" TextAlignment="Center" />
         </Button>

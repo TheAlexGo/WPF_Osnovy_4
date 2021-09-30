@@ -25,6 +25,7 @@ namespace Praktikum_4
         Window1 w1 = new Window1();
         Window2 w2 = new Window2();
         Window3 w3 = new Window3();
+        Window4 w4 = new Window4();
         public MainWindow()
         {
             InitializeComponent();
@@ -43,6 +44,11 @@ namespace Praktikum_4
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             w3.Show();
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            w4.Show();
         }
     }
 }
