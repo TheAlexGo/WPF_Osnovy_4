@@ -5,25 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Praktikum_4"
         mc:Ignorable="d"
-         Title="Окно не правильной формы" Height="350" Width="525" 
-        AllowsTransparency="True"
-        Background="Transparent"
-        WindowStyle="None"
-        MouseLeftButtonDown="Window_MouseLeftButtonDown">
-    <Border Background="LightBlue" 
-            CornerRadius="0,20,20,20" 
-            BorderThickness="2" 
-            BorderBrush="Black">
-        <Grid>
-            <Button Content="X" 
-                    Height="25" 
-                    Name="buttonClose" 
-                    Width="29" 
-                    Margin="6,0,455,270" 
-                    Click="buttonClose_Click" />
-        </Grid>
-    </Border>
+         Title="Main Window" Height="350" Width="525">
+    <Grid>
 
-
-
+    </Grid>
 </Window>
