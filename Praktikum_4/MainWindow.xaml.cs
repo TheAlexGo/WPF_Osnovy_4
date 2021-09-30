@@ -26,18 +26,5 @@ namespace Praktikum_4
         {
             InitializeComponent();
         }
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            try
-            {
-                // Сделать часть окна прозрачной.
-                GlassEffectHelper.ExtendGlass(this, -1, -1, -1, -1);
-            }
-            catch
-            {
-                MessageBox.Show("Error");
-            }
-        }
-
     }
 }
