@@ -7,14 +7,7 @@
         mc:Ignorable="d"
        Title="Главное окно" Height="175" Width="461">
     <Grid>
-        <Button Content="Update" 
-                Height="23" 
-                HorizontalAlignment="Left" 
-                Margin="112,33,0,0" 
-                Name="buttonShow" 
-                VerticalAlignment="Top" 
-                Width="227" 
-                Click="button1_Click" />
+
     </Grid>
 
 </Window>
