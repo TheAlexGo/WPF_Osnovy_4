@@ -5,22 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Praktikum_4"
         mc:Ignorable="d"
-                Title="Окно не правильной формы" Height="350" Width="525" 
-        AllowsTransparency="True"
-        WindowStyle="None"
-        MouseLeftButtonDown="Window_MouseLeftButtonDown">
-    <Window.Background>
-        <ImageBrush ImageSource="bg.png"></ImageBrush>
-    </Window.Background>
+                Title="Main Window" Height="350" Width="525" >
+
     <Grid>
-        <Button Content="Close" 
-                Height="23" 
-                HorizontalAlignment="Left" 
-                Margin="162,60,0,0" 
-                Name="button1" 
-                VerticalAlignment="Top" 
-                Width="75" 
-                Click="button1_Click" />
 
     </Grid>
 
